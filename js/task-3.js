@@ -9,17 +9,11 @@
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
 function getElementWidth(content, padding, border) {
-  //  content = parseFloat(padding.replace(`px`, `0`));
-  //  let content = Number.parseInt (Npx);
-  //   let content = Npx;
-  //   let padding = Ypx;
-  //   padding *= 2;
-  //   let border = Zpx;
-  //   border *= 2;
-  //   padding = Number.parseInt(padding - "px" *2);
-  let totalWidth = content + padding * 2 + border * 2;
-  console.log(Number.parseInt(totalWidth));
-  return `You ordered ${content + " " + padding + " " + border} bots`;
+  return (
+    Number.parseFloat(content) +
+    Number.parseFloat(padding) * 2 +
+    Number.parseFloat(border) * 2
+  );
 }
 getElementWidth();
 console.log(getElementWidth("50px", "8px", "4px")); // 74
