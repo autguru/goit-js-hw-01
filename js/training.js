@@ -1,3 +1,5 @@
+"use strict"
+
 console.log("123");
 
 // ne parne = 1 parne=0 x=9 x=12// X=8%5=3 ostacha
@@ -145,3 +147,13 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"
 
 //     return Math.round(bmi * 10) / 10;
 // }
+
+
+function add(a, b, c) {
+  console.log(`Addition result equals ${a + b + c}`);
+ }
+ add ();
+ add(15, 27, 10);
+ add(10, 20, 30);
+ add(5, 10, 15);
+ 

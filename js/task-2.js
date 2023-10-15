@@ -1,3 +1,5 @@
+"use strict";
+
 // Задача 2. Доставка товару
 // Оголоси функцію getShippingMessage, яка очікує три параметри, значення яких будуть задаватися під час її виклику:
 
@@ -11,8 +13,7 @@
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
 function getShippingMessage(country, price, deliveryFee) {
-  totalPrice = price + deliveryFee;
-  // console.log(`${price + deliveryFee}`);
+  let totalPrice = price + deliveryFee;
   return `Shipping to ${country} will cost ${totalPrice} credits`;
 }
 
